@@ -41,7 +41,7 @@ const cn = {
     Copy: "全部复制",
   },
   Home: {
-    NewChat: "新的聊天",
+    NewChat: "与顶级网络安全专家对话",
     DeleteChat: "确认删除选中的对话？",
   },
   Settings: {
@@ -97,7 +97,7 @@ const cn = {
     },
     Token: {
       Title: "API Key",
-      SubTitle: "使用自己的 Key 可绕过受控访问限制",
+      SubTitle: "使用自己的 Key 可绕过受控访问限制，就无需填写授权码",
       Placeholder: "OpenAI API Key",
     },
     Usage: {
@@ -109,9 +109,9 @@ const cn = {
       Check: "重新检查",
     },
     AccessCode: {
-      Title: "访问码",
+      Title: "授权码",
       SubTitle: "现在是受控访问状态",
-      Placeholder: "请输入访问码",
+      Placeholder: "请输入授权码",
     },
     Model: "模型 (model)",
     Temperature: {
