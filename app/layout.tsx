@@ -7,28 +7,25 @@ import { ACCESS_CODES, IS_IN_DOCKER } from "./api/access";
 
 let COMMIT_ID: string | undefined;
 try {
-  COMMIT_ID = process
-    .execSync("git rev-parse --short HEAD")
-    .toString()
-    .trim();
+  COMMIT_ID = process.execSync("git rev-parse --short HEAD").toString().trim();
 } catch (e) {
-  console.error("No git or not from git repo.")
+  console.error("No git or not from git repo.");
 }
 
 export const metadata = {
-  title: "ChatGPT Next Web",
-  description: "Your personal ChatGPT Chat Bot.",
+  title: "SecGPT",
+  description: "你的私人顶级网络安全专家顾问.",
   appleWebApp: {
-    title: "ChatGPT Next Web",
+    title: "SecGPT",
     statusBarStyle: "black-translucent",
   },
-  themeColor: "#fafafa"
+  themeColor: "#fafafa",
 };
 
 function Meta() {
   const metas = {
     version: COMMIT_ID ?? "unknown",
-    access: (ACCESS_CODES.size > 0 || IS_IN_DOCKER) ? "enabled" : "disabled",
+    access: ACCESS_CODES.size > 0 || IS_IN_DOCKER ? "enabled" : "disabled",
   };
 
   return (

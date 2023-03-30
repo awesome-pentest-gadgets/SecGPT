@@ -169,7 +169,7 @@ export function Settings(props: { closeSettings: () => void }) {
             </Popover>
           </SettingItem>
 
-          <SettingItem
+          {/* <SettingItem
             title={Locale.Settings.Update.Version(currentId)}
             subTitle={
               checkingUpdate
@@ -192,7 +192,7 @@ export function Settings(props: { closeSettings: () => void }) {
                 onClick={() => checkUpdate(true)}
               />
             )}
-          </SettingItem>
+          </SettingItem> */}
 
           <SettingItem title={Locale.Settings.SendKey}>
             <select
@@ -232,7 +232,7 @@ export function Settings(props: { closeSettings: () => void }) {
             </select>
           </ListItem>
 
-          <SettingItem title={Locale.Settings.Lang.Name}>
+          {/* <SettingItem title={Locale.Settings.Lang.Name}>
             <select
               value={getLang()}
               onChange={(e) => {
@@ -245,7 +245,7 @@ export function Settings(props: { closeSettings: () => void }) {
                 </option>
               ))}
             </select>
-          </SettingItem>
+          </SettingItem> */}
 
           <SettingItem
             title={Locale.Settings.FontSize.Title}
@@ -281,7 +281,7 @@ export function Settings(props: { closeSettings: () => void }) {
             </SettingItem>
           </div>
         </List>
-        <List>
+        {/* <List>
           <SettingItem
             title={Locale.Settings.Prompt.Disable.Title}
             subTitle={Locale.Settings.Prompt.Disable.SubTitle}
@@ -311,7 +311,7 @@ export function Settings(props: { closeSettings: () => void }) {
               onClick={() => showToast(Locale.WIP)}
             />
           </SettingItem>
-        </List>
+        </List> */}
         <List>
           {enabledAccessControl ? (
             <SettingItem
@@ -345,7 +345,7 @@ export function Settings(props: { closeSettings: () => void }) {
             ></input>
           </SettingItem>
 
-          <SettingItem
+          {/* <SettingItem
             title={Locale.Settings.Usage.Title}
             subTitle={
               loadingUsage
@@ -365,9 +365,9 @@ export function Settings(props: { closeSettings: () => void }) {
                 onClick={checkUsage}
               />
             )}
-          </SettingItem>
+          </SettingItem> */}
 
-          <SettingItem
+          {/* <SettingItem
             title={Locale.Settings.HistoryCount.Title}
             subTitle={Locale.Settings.HistoryCount.SubTitle}
           >
@@ -385,9 +385,9 @@ export function Settings(props: { closeSettings: () => void }) {
                 )
               }
             ></input>
-          </SettingItem>
+          </SettingItem> */}
 
-          <SettingItem
+          {/* <SettingItem
             title={Locale.Settings.CompressThreshold.Title}
             subTitle={Locale.Settings.CompressThreshold.SubTitle}
           >
@@ -404,10 +404,10 @@ export function Settings(props: { closeSettings: () => void }) {
                 )
               }
             ></input>
-          </SettingItem>
+          </SettingItem> */}
         </List>
 
-        <List>
+        {/* <List>
           <SettingItem title={Locale.Settings.Model}>
             <select
               value={config.modelConfig.model}
@@ -481,7 +481,7 @@ export function Settings(props: { closeSettings: () => void }) {
               }}
             ></input>
           </SettingItem>
-        </List>
+        </List> */}
       </div>
     </>
   );
